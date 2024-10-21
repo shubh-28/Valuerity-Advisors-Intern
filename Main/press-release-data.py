@@ -5,9 +5,14 @@ from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 import time
 import requests
+from dotenv import load_dotenv
+import os
 
-# Placeholder for Google Gemini API Key
-GEMINI_API_KEY = "YOUR_GEMINI_API_KEY"
+# Load environment variables from the .env file
+load_dotenv()
+
+# Access the API key from environment variables
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
 # Function to detect dates using regular expressions
 def detect_date(text):

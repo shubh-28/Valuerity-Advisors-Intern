@@ -1,4 +1,5 @@
 from googlesearch import search
+import random
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
@@ -13,6 +14,7 @@ def find_press_release_url(company_name):
     for url in search(query, num_results=5):  # Adjust num_results if needed
         if 'press' in url or 'news' in url:  # Filter for likely press release URLs
             urls.append(url)
+        time.sleep(random.uniform(5, 10))
     
     if urls:
         return urls[0]  # Return the first valid URL
