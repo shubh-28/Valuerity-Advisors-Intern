@@ -1,0 +1,158 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  /* Result Page */
+  .result-page {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    color: #333;
+  }
+  
+  /* Title and Subtitle */
+  .result-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .company-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .company-subtext {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  /* Horizontal Components */
+  .horizontal-components {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  
+  .rating-component {
+    width: 48%;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .rating-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .rating-value {
+    font-size: 3rem;
+    color: #007bff;
+  }
+  
+  .ratings-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .rating-item {
+    font-size: 1.2rem;
+    margin: 5px 0;
+  }
+  
+  /* Employee Reviews */
+  .employee-reviews {
+    margin-bottom: 30px;
+  }
+  
+  .reviews-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .review {
+    width: 45%;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .review-text {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .review-rating {
+    font-size: 1.2rem;
+    color: #007bff;
+  }
+  
+  /* Google News */
+  .google-news {
+    margin-bottom: 30px;
+  }
+  
+  .carousel {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  
+  .news-tile {
+    width: 30%;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .news-tile h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .news-tile p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Press Release */
+  .press-release {
+    margin-bottom: 30px;
+  }
+  
+  .press-release ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .press-release li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Patents */
+  .patents {
+    margin-bottom: 30px;
+  }
+  
+  .patents ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .patents li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
