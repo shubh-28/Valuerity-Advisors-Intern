@@ -1,4 +1,5 @@
 import React from 'react';
+import Slider from 'react-slick';
 import './Result.css';
 
 const GoogleNews = () => {
@@ -15,17 +16,39 @@ const GoogleNews = () => {
     { title: 'News 10', text: 'Company makes strategic acquisition.' },
   ];
 
+  const settings = {
+    dots: true, // Add navigation dots
+    infinite: true, // Infinite looping
+    speed: 500, // Transition speed
+    slidesToShow: 3, // Number of tiles visible at once
+    slidesToScroll: 1, // Number of tiles to scroll at once
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
+
   return (
     <div className="google-news">
       <h2>Google News</h2>
-      <div className="carousel">
+      <Slider {...settings}>
         {newsTiles.map((tile, index) => (
           <div key={index} className="news-tile">
             <h3>{tile.title}</h3>
             <p>{tile.text}</p>
           </div>
         ))}
-      </div>
+      </Slider>
     </div>
   );
 };

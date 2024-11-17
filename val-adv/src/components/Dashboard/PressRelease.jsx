@@ -11,13 +11,15 @@ const PressRelease = () => {
   ];
 
   return (
-    <div className="press-release">
-      <h2>Press Release</h2>
-      <ul>
-        {pressReleases.map((release, index) => (
-          <li key={index}>{release}</li>
-        ))}
-      </ul>
+    <div className="press-release-container">
+      <h2 className="section-heading">Press Release</h2>
+      <div className="press-release">
+        <ol>
+          {pressReleases.map((release, index) => (
+            <li key={index}>{release}</li>
+          ))}
+        </ol>
+      </div>
     </div>
   );
 };
