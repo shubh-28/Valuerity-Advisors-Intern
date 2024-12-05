@@ -1,0 +1,277 @@
+/* Slick carousel core styles */
+@import "~slick-carousel/slick/slick.css";
+
+/* Slick carousel theme styles */
+@import "~slick-carousel/slick/slick-theme.css";
+
+
+/* General Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  /* Result Page */
+  .result-page {
+    background-color: seagreen;
+    margin: 20px;
+    padding: 20px;
+    color: #333;
+  }
+  
+  /* Title and Subtitle */
+  .result-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .company-title {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #fff;
+  }
+  
+  .company-subtext {
+    font-size: 1.1rem;
+    color: #f5f5f5;
+  }
+  
+  /* Horizontal Components */
+  .horizontal-components {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  
+  .rating-component {
+    width: 48%;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .rating-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .rating-value {
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: #007bff;
+  }
+  
+  /* Ratings List Styling */
+.ratings-list {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding */
+  text-align: left; /* Left align the entire list */
+}
+
+.rating-item {
+  font-size: 1.2rem;
+  margin: 10px 0; /* Add space between list items */
+  line-height: 1.5; /* Enhance readability */
+  color: #333; /* Ensure a readable text color */
+  display: flex; /* Align name and rating in one line */
+}
+
+.software-name {
+  font-weight: bold; /* Highlight the software name */
+  margin-right: 8px; /* Add spacing between name and rating */
+}
+
+.software-rating {
+  color: #007bff; /* Color for ratings */
+}
+
+/* Employee Reviews */
+/* Employee Reviews */
+.employee-reviews {
+  margin: 20px auto; /* Center-align the container */
+  padding: 20px;
+  background-color: #ffffff; /* White background */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+  max-width: 90%; /* Restrict width */
+}
+
+.employee-reviews h2 {
+  font-size: 2rem; /* Slightly larger heading */
+  text-align: center;
+  color: #333; /* Darker color for better visibility */
+  margin-bottom: 30px; /* Increased spacing below the heading */
+}
+
+.reviews-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; /* Ensure spacing between items */
+  gap: 20px;
+}
+
+.review {
+  width: 45%; /* Adjust size to fit 2 reviews in a row */
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Shadow effect */
+  /* border: 1px solid black; Solid black border */
+  text-align: center;
+}
+
+.review-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333; /* Darker text color */
+}
+
+.review-text {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.review-rating {
+  font-size: 1.2rem;
+  color: #007bff; /* Blue color for ratings */
+}
+
+
+  
+  /* Google News */
+  .google-news {
+    /* margin: 20px auto; 
+    padding: 10px 20px; */
+    text-align: center; 
+    /* max-width: 90%;
+    height: 250px;
+    overflow: hidden; */
+  }
+  
+  .google-news h2 {
+    font-size: 2rem;
+    margin-bottom: 15px; /* Reduced space between title and content */
+  }
+  
+  .slick-slider {
+    margin: 0 auto;
+    padding: 10px 0; /* Adjust padding for compactness */
+    height: 200px; /* Set a fixed height for the carousel */
+    display: flex; /* Ensure proper positioning of content */
+    justify-content: center; /* Center the content inside the slider */
+  }
+  
+  /* Space between each tile */
+  .slick-slide {
+    margin: 0 15px; /* Add space between tiles */
+  }
+
+  .slick-track{
+    width: 6000px !important;
+  }
+  
+  .news-tile {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    border: 1px solid #ccc;
+    text-align: center;
+    height: 150px; /* Decreased the height by 30% */
+    width: 20%; /* Decreased the width by 30% */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  
+  .news-tile h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .news-tile p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.4;
+  }
+  
+  /* Fix carousel overflow */
+  .slick-list {
+    margin: 0 -15px;
+  }
+  
+  
+  
+  
+  /* Press Release */
+  /* Press Release */
+.press-release-container {
+  margin-bottom: 30px;
+  padding: 10px;
+  background: #ffffff; /* White background for the container */
+  border-radius: 8px; /* Rounded corners for the container */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.section-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333; /* Blue color for section headings */
+  margin-bottom: 15px;
+  text-align: left; /* Left-aligned heading */
+}
+
+.press-release {
+  padding: 15px;
+}
+
+.press-release ol {
+  list-style-type: decimal; /* Numbered list */
+  padding-left: 20px; /* Spacing for enumeration */
+  margin: 0;
+}
+
+.press-release li {
+  font-size: 1.2rem;
+  margin-bottom: 15px; /* More clean spacing between items */
+  line-height: 1.6; /* Better readability */
+  color: #333; /* Dark text color */
+  text-align: left;
+}
+
+  
+  /* Patents */
+  /* Patents */
+.patents {
+  margin-bottom: 30px; /* Add space between components */
+  background-color: #ffffff; /* Set background color to white */
+  padding: 20px; /* Add padding for spacing inside the container */
+  border-radius: 8px; /* Rounded corners for the component */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.patents h2 {
+  font-size: 1.8rem; /* Adjust title font size */
+  font-weight: bold;
+  color: #333; /* Darker color for the title */
+  margin-bottom: 15px; /* Margin below the title */
+}
+
+.patents ul {
+  list-style-type: none; /* Remove default bullet points */
+  padding: 0; /* Remove padding from the list */
+}
+
+.patents li {
+  font-size: 1.2rem; /* Adjust font size */
+  margin-bottom: 12px; /* Space between list items */
+  color: #333; /* Set text color to dark for readability */
+  text-align: left; /* Left align the text */
+}
