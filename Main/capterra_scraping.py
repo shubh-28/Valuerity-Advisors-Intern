@@ -135,5 +135,5 @@ def scrape_capterra(company_name):
     return structured_output if structured_output else [f"No results found for company: {company_name}"]
 
 # Function for main script integration
-def run_capterra_scraper(company_name):
-    return scrape_capterra(company_name)
+# def run_capterra_scraper(company_name):
+print(scrape_capterra("Oracle"))

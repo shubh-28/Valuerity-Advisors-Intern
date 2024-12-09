@@ -1,7 +1,8 @@
 from fastapi import APIRouter
-from typing import Dict, List
+from typing import Dict
 from scrapers.google_news_scraping import run_google_news_scraper
 from scrapers.patents_desc import run_patents_scraper
+from scrapers.capterra_scraping import run_capterra_scraper
 
 router = APIRouter()
 
@@ -16,8 +17,11 @@ def search_company(company_name: str) -> Dict:
 
     patents_results = run_patents_scraper(company_name)
 
+    capterra_results = run_capterra_scraper(company_name)
+
     return {
         "company_name": company_name,
         "news": news_results,  # Structured news data returned from scraper
         "patents": patents_results,
+        "capterra": capterra_results,
     }
