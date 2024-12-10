@@ -52,7 +52,7 @@ def scrape_google_news(company_name):
     finally:
         driver.quit()
 
-    # Return structured results or an empty list if no headlines found
+    # Return structured results or an empty list if no headlines found.
     return structured_output if structured_output else []
 
 # Function for main script integration
