@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Slider from "react-slick";
 import './Result.css';
 
@@ -25,13 +25,14 @@ const GoogleNews = ({ data }) => {
       <Slider {...settings}>
         {limitedData.map((newsItem, index) => (
           <div key={index} className="news-tile">
-            <a 
-              href={newsItem.link} 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              style={{ textDecoration: 'none', color: 'inherit' }} // Maintain original styling
+            <a
+              href={newsItem.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ textDecoration: 'none', color: 'inherit' }}
             >
               <h3>{newsItem.title}</h3>
+              <p className="news-time">{newsItem.time}</p>
             </a>
           </div>
         ))}
