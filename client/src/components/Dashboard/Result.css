@@ -211,40 +211,44 @@ body {
   
   
   /* Press Release */
-  /* Press Release */
-.press-release-container {
-  margin-bottom: 30px;
-  padding: 10px;
-  background: #ffffff; /* White background for the container */
-  border-radius: 8px; /* Rounded corners for the container */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-}
-
-.section-heading {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #333; /* Blue color for section headings */
-  margin-bottom: 15px;
-  text-align: left; /* Left-aligned heading */
-}
-
-.press-release {
-  padding: 15px;
-}
-
-.press-release ol {
-  list-style-type: decimal; /* Numbered list */
-  padding-left: 20px; /* Spacing for enumeration */
-  margin: 0;
-}
-
-.press-release li {
-  font-size: 1.2rem;
-  margin-bottom: 15px; /* More clean spacing between items */
-  line-height: 1.6; /* Better readability */
-  color: #333; /* Dark text color */
-  text-align: left;
-}
+  .press-release-container {
+    margin-bottom: 30px;
+    padding: 10px;
+    background: #ffffff; /* White background for the container */
+    border-radius: 8px; /* Rounded corners for the container */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .section-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333; /* Dark gray color for section headings */
+    margin-bottom: 15px;
+    text-align: left; /* Left-aligned heading */
+  }
+  
+  .press-release {
+    padding: 15px;
+  }
+  
+  .press-release-item {
+    font-size: 1.2rem;
+    margin-bottom: 20px; /* Clean spacing between items */
+    line-height: 1.6; /* Better readability */
+    color: #333; /* Dark text color */
+    text-align: left;
+  }
+  
+  .press-release-item a {
+    text-decoration: none; /* Remove underline from links */
+    color: #000; /* Custom link color */
+    transition: color 0.3s; /* Smooth color transition on hover */
+  }
+  
+  .press-release-item a:hover {
+    color: #0056b3; /* Darker blue on hover */
+  }
+  
 
   
   /* Patents */

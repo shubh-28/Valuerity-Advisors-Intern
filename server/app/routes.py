@@ -27,5 +27,5 @@ def search_company(company_name: str) -> Dict:
         "news": news_results,  # Structured news data returned from scraper
         "patents": patents_results,
         "capterra": capterra_results,
-         "pressReleases": press_release_results,
+        "pressReleases": press_release_results,
     }
