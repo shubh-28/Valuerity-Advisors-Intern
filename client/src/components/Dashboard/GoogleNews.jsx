@@ -4,7 +4,7 @@ import './Result.css';
 
 const GoogleNews = ({ data }) => {
   // Show only the first 10 news items
-  const limitedData = Array.isArray(data) ? data.slice(0, 10) : [];
+  const limitedData = Array.isArray(data) ? data.slice(0, 15) : [];
 
   if (limitedData.length === 0) {
     return <div>No news available for the selected company.</div>;

@@ -76,7 +76,7 @@ def process_output(output_text):
         generation_config=generation_config,
     )
 
-    prompt = """This code output currently contains news headlines with links but also includes extra text that isn't part of the headline. Please filter this data and provide only the headlines along with their links, removing any non-headline text. Structure the results in a numbered list format, with each item containing just the headline followed by its link. Only include items that resemble a news headline or a press release headline, omitting any irrelevant or extraneous information."""
+    prompt = """This code output currently contains news headlines with respective dates and links but also includes extra text that isn't part of the headline. Please filter this data and provide only the headlines, date (also very important) and their links, removing any non-headline text. Structure the results in a numbered list format, with each item containing just the headline and its date followed by its link. Only include items that resemble a news headline or a press release headline having its date, omitting any irrelevant or extraneous information."""
 
     # Generate the filtered output
     chat_session = model.start_chat(history=[])
