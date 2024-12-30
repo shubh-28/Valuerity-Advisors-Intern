@@ -70,7 +70,7 @@ const Result = () => {
       </div>
 
       <EmployeeReviews data={companyData.reviews} />
-      <GoogleNews data={companyData.news.slice(0, 15)} />
+      <GoogleNews data={companyData.news} />
       <PressRelease data={companyData.pressReleases} />
       <Patents data={companyData.patents} />
 
