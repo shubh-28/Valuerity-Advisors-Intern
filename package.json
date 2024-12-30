@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "jspdf": "^2.5.2",
     "react-multi-carousel": "^2.8.5"
   }
 }
