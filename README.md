@@ -5,6 +5,7 @@ PREREQUISITES:-
     pip install google-generativeapi
     pip install python-dotenv
     npm install react-multi-carousel
+    npm install jspdf
 
 INSTALL FASTAPI 
     pip install fastapi uvicorn
