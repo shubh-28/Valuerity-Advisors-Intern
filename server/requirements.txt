@@ -2,3 +2,4 @@ fastapi
 uvicorn
 requests
 selenium
+webdriver_manager==4.0.2
