@@ -1,30 +1,22 @@
-#!/bin/bash
+FROM python:3.11
 
-# Update package lists
-echo "Updating package lists..."
-apt-get update
-
-# Install build tools and dependencies
-echo "Installing build tools and dependencies..."
-apt-get install -y \
-    build-essential \
-    cmake \
-    libopenblas-dev \
-    liblapack-dev \
-    python3-dev \
+# Install SDL2 and other necessary libraries
+RUN apt-get update && apt-get install -y \
     libsdl2-dev \
     libsdl2-image-dev \
     libsdl2-mixer-dev \
     libsdl2-ttf-dev \
-    libffi-dev \
-    libssl-dev
+    && apt-get clean
 
-# Verify installation
-echo "Verifying installation of critical libraries..."
-dpkg -l | grep -E "libsdl2|build-essential|cmake|libopenblas-dev|liblapack-dev|python3-dev|libffi-dev|libssl-dev"
+# Set the working directory
+WORKDIR /app
 
-# Clean up unnecessary files
-echo "Cleaning up..."
-apt-get clean
+# Copy requirements and install them
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
 
-echo "Script execution completed."
+# Copy the rest of your application code
+COPY . .
+
+# Command to run your FastAPI app
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "10000"]
